@@ -6,7 +6,7 @@ const MotionDiv = motion.div;
 
 const faqData = [
   {
-    question: ". What types of goods do you handle?",
+    question: " What types of goods do you handle?",
     answer:
       "We handle a wide range of goods, including general merchandise, industrial equipment, agricultural products, electronics, consumer goods, and raw materials. Our services are flexible and tailored to client needs.",
   },

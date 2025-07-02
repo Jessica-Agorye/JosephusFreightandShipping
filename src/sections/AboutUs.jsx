@@ -7,12 +7,10 @@ function AboutUs() {
       id="about"
       className="relative bg-gradient-to-r from-white via-blue-50 to-white py-24 text-gray-800 overflow-hidden"
     >
-      {/* Decorative shapes for modern style */}
       <div className="absolute -top-10 -left-10 w-72 h-72 bg-blue-100 opacity-40 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 -right-10 w-72 h-72 bg-blue-200 opacity-30 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-16">
-        {/* Image Section */}
         <div className="md:w-1/2">
           <div className="relative w-full h-80 md:h-[28rem] rounded-xl overflow-hidden shadow-xl">
             <img
@@ -24,21 +22,23 @@ function AboutUs() {
           </div>
         </div>
 
-        {/* Text Section */}
         <div className="md:w-1/2">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-700">
-            About Our Shipping Solutions
+            About Our Solutions
           </h2>
           <p className="text-lg mb-6">
-            For over a decade, we’ve delivered seamless freight and logistics
-            solutions for businesses worldwide. Our mission is to simplify
-            shipping and empower your growth through reliable, transparent, and
-            innovative services.
+            Josephus International Link Ltd is a Nigerian company offering
+            import, export, logistics, and clearing & forwarding services. With
+            a focus on professionalism and timely delivery, we provide
+            end-to-end supply chain solutions across industries, handling cargo
+            by land, sea, or air, and managing all documentation and customs
+            clearance. Based in Nigeria, we serve clients throughout West
+            Africa, dedicated to building strong business connections
           </p>
           <ul className="space-y-3 mb-8">
             <li className="flex items-center">
               <span className="w-3 h-3 bg-blue-700 rounded-full mr-3"></span>
-              Fast & reliable global freight services
+              Import and Export Services for diverse industries
             </li>
             <li className="flex items-center">
               <span className="w-3 h-3 bg-blue-700 rounded-full mr-3"></span>
@@ -46,7 +46,7 @@ function AboutUs() {
             </li>
             <li className="flex items-center">
               <span className="w-3 h-3 bg-blue-700 rounded-full mr-3"></span>
-              Transparent tracking and real-time updates
+              Customs Clearing and Documentation for smooth trade processes
             </li>
           </ul>
           <a

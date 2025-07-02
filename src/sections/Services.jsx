@@ -14,25 +14,25 @@ function Services() {
     {
       title: "Import Services",
       description:
-        "Seamless import solutions with global reach. We handle every step from origin to destination with transparency and speed.",
+        "We make importing to Nigeria fast and compliant, handling sourcing, shipping, customs, delivery, and quality checks.",
       icon: <FaPlane size={40} className="text-blue-700" />,
     },
     {
       title: "Export Services",
       description:
-        "Empower your business to reach new markets. We manage your export logistics efficiently and cost-effectively.",
+        "We help Nigerian businesses reach global markets with efficient export services, managing documentation, packaging, freight, customs, and international delivery.",
       icon: <FaShippingFast size={40} className="text-blue-700" />,
     },
     {
-      title: "Warehousing & Distribution",
+      title: "Logistics",
       description:
-        "Secure storage and streamlined distribution tailored to your business needs. Keep inventory moving efficiently.",
+        "We provide reliable logistics services across Nigeria, including transport, warehousing, door-to-door delivery, cargo handling, and real-time tracking.",
       icon: <FaWarehouse size={40} className="text-blue-700" />,
     },
     {
-      title: "Customs Clearance",
+      title: "Clearing & Forwarding",
       description:
-        "Ensure smooth customs processing and compliance. Our experts handle documentation and regulations for worry-free shipping.",
+        "We provide efficient clearing and forwarding services in Nigeria, handling customs clearance, trade documents, duty payments, regulatory compliance, and prompt delivery of goods to their final destination.",
       icon: <FaFileInvoice size={40} className="text-blue-700" />,
     },
   ];
@@ -57,7 +57,7 @@ function Services() {
           Our Services
         </MotionDiv>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 items-stretch">
           {services.map((service, index) => (
             <MotionDiv
               key={index}
@@ -65,13 +65,13 @@ function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="bg-white rounded-xl shadow-lg p-6 hover:-translate-y-2 hover:shadow-2xl transition-transform duration-300"
+              className="bg-white rounded-xl shadow-lg p-6 hover:-translate-y-2 hover:shadow-2xl transition-transform duration-300 flex flex-col h-full text-left"
             >
-              <div className="mb-4 flex justify-center">{service.icon}</div>
-              <h3 className="text-xl font-semibold text-center text-blue-700 mb-3">
+              <div className="mb-4">{service.icon}</div>
+              <h3 className="text-xl font-semibold text-blue-700 mb-3">
                 {service.title}
               </h3>
-              <p className="text-gray-600 text-center">{service.description}</p>
+              <p className="text-gray-600 flex-1">{service.description}</p>
             </MotionDiv>
           ))}
         </div>

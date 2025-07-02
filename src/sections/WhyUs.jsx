@@ -9,7 +9,7 @@ function WhyChooseUs() {
     {
       title: "Global Coverage",
       description:
-        "We deliver shipments to over 150 countries, ensuring smooth logistics anywhere your business goes.",
+        "We deliver shipments to over 50 countries, ensuring smooth logistics anywhere your business goes.",
       icon: <FaGlobeAmericas size={24} className="text-blue-700" />,
       color: "bg-white text-blue-700",
     },
