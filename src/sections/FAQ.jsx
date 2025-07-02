@@ -6,24 +6,39 @@ const MotionDiv = motion.div;
 
 const faqData = [
   {
-    question: "How long does international shipping take?",
+    question: ". What types of goods do you handle?",
     answer:
-      "Shipping times vary by destination and shipping method. Typically, international freight can take 5-14 business days depending on the route and customs clearance.",
+      "We handle a wide range of goods, including general merchandise, industrial equipment, agricultural products, electronics, consumer goods, and raw materials. Our services are flexible and tailored to client needs.",
   },
   {
-    question: "Do you handle customs paperwork?",
+    question: "Do you assist with both air and sea freight?",
     answer:
-      "Absolutely! Our customs experts ensure all documentation is correct and your shipments comply with international regulations for seamless transit.",
+      "Yes, we provide logistics support for both air and sea freight, including coordination, documentation, and real-time tracking of shipments.",
   },
   {
-    question: "Can I track my shipment in real-time?",
+    question: "Can you help with customs clearance at any Nigerian port?",
     answer:
-      "Yes, we offer advanced tracking solutions that let you monitor your shipments at every stage of the journey in real-time.",
+      "Absolutely. We offer clearing and forwarding services at all major Nigerian seaports, airports, and land border posts, including Lagos (Apapa and Tin Can), Onne, Port Harcourt, Kano, and Abuja.",
   },
   {
-    question: "What types of cargo do you ship?",
+    question: "How long does the clearing process take?",
     answer:
-      "We handle a wide range of cargo including general freight, oversized loads, hazardous materials, and temperature-sensitive goods.",
+      "Clearing times vary depending on cargo type, documentation, and regulatory checks. However, with complete documents, we aim to complete clearance within 3 to 5 working days.",
+  },
+  {
+    question: " What export support do you provide?",
+    answer:
+      "We assist exporters with product registration, packaging, export permits, customs documentation, freight booking, and delivery to foreign destinations.",
+  },
+  {
+    question: "  Is your company licensed?",
+    answer:
+      "Yes, Josephus International Link Ltd is fully registered and compliant with Nigerian trade and logistics regulatory authorities.",
+  },
+  {
+    question: "  Can you help with import permits and SONCAP/NAFDAC approvals?",
+    answer:
+      "Yes, we offer support with obtaining Form M, SONCAP, NAFDAC, and other mandatory trade approvals.",
   },
 ];
 
@@ -39,7 +54,6 @@ function FAQSection() {
       id="faq"
       className="relative bg-gradient-to-r from-white via-blue-50 to-white py-24 text-gray-800 overflow-hidden"
     >
-      {/* Decorative background blobs */}
       <div className="absolute -top-20 -left-20 w-72 h-72 bg-blue-100 opacity-40 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 -right-20 w-72 h-72 bg-blue-200 opacity-30 rounded-full blur-3xl"></div>
 

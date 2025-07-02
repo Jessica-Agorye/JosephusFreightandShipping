@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import heroimage from "../assets/images/heroimage.jpg";
 
 const MotionDiv = motion.div;
 
 function HeroSection() {
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  useEffect(() => {
+    setHasAnimated(true);
+  }, []);
+
   return (
     <section
       id="hero"
@@ -19,10 +25,9 @@ function HeroSection() {
       <div className="relative max-w-7xl mx-auto px-4 py-32 flex flex-col md:flex-row items-center justify-between">
         {/* Text Content */}
         <MotionDiv
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.3, ease: "easeOut" }}
+          initial={{ opacity: 0, x: -20 }}
+          animate={hasAnimated ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.5, ease: "easeOut" }}
           className="md:w-1/2 will-change-transform"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
@@ -41,12 +46,11 @@ function HeroSection() {
           </a>
         </MotionDiv>
 
-        {/* Overlapping Images */}
+        {/* Images container with one-time animation */}
         <MotionDiv
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.3, ease: "easeOut" }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={hasAnimated ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, ease: "easeOut" }}
           className="mt-16 md:mt-0 md:w-1/2 flex justify-center relative will-change-transform"
         >
           {/* Image 1 */}
