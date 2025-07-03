@@ -11,9 +11,13 @@ const ScreenPage = () => {
     <div className="scroll-smooth">
       <Navbar />
       <HeroSection />
+      <div className="mt-16"></div>
       <AboutUs />
+      <div className="mt-16"></div>
       <Services />
+      <div className="mt-16"></div>
       <WhyChooseUs />
+      <div className="mt-16"></div>
       <FAQSection />
       <Footer />
     </div>

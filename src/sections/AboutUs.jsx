@@ -1,5 +1,6 @@
 import React from "react";
 import heroimage from "../assets/images/heroimage.jpg";
+import { FaShip, FaExchangeAlt, FaFileAlt } from "react-icons/fa";
 
 function AboutUs() {
   return (
@@ -7,54 +8,100 @@ function AboutUs() {
       id="about"
       className="relative bg-gradient-to-r from-white via-blue-50 to-white py-24 text-gray-800 overflow-hidden"
     >
+      {/* Decorative blobs */}
       <div className="absolute -top-10 -left-10 w-72 h-72 bg-blue-100 opacity-40 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 -right-10 w-72 h-72 bg-blue-200 opacity-30 rounded-full blur-3xl"></div>
 
-      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-16">
-        <div className="md:w-1/2">
-          <div className="relative w-full h-80 md:h-[28rem] rounded-xl overflow-hidden shadow-xl">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-stretch gap-8">
+        {/* Image Section with 3 overlapping images */}
+        <div className="md:w-1/2 relative min-h-[28rem] flex justify-center items-center">
+          {/* Image 1 */}
+          <div className="w-52 h-72 rounded-xl overflow-hidden shadow-lg transform rotate-[-6deg] absolute top-0 left-8">
             <img
               src={heroimage}
-              alt="About Us"
+              alt="About Us 1"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-blue-600/40 to-transparent"></div>
+          </div>
+
+          {/* Image 2 */}
+          <div className="w-52 h-72 rounded-xl overflow-hidden shadow-xl transform rotate-[5deg] absolute top-10 right-8">
+            <img
+              src={heroimage}
+              alt="About Us 2"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-blue-600/40 to-transparent"></div>
+          </div>
+
+          {/* Image 3 */}
+          <div className="w-52 h-72 rounded-xl overflow-hidden shadow-lg transform rotate-[-3deg] absolute bottom-0 left-1/2 translate-x-[-50%]">
+            <img
+              src={heroimage}
+              alt="About Us 3"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-blue-600/40 to-transparent"></div>
           </div>
         </div>
 
-        <div className="md:w-1/2">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-700">
-            About Our Solutions
-          </h2>
-          <p className="text-lg mb-6">
-            Josephus International Link Ltd is a Nigerian company offering
-            import, export, logistics, and clearing & forwarding services. With
-            a focus on professionalism and timely delivery, we provide
-            end-to-end supply chain solutions across industries, handling cargo
-            by land, sea, or air, and managing all documentation and customs
-            clearance. Based in Nigeria, we serve clients throughout West
-            Africa, dedicated to building strong business connections
-          </p>
-          <ul className="space-y-3 mb-8">
-            <li className="flex items-center">
-              <span className="w-3 h-3 bg-blue-700 rounded-full mr-3"></span>
-              Import and Export Services for diverse industries
-            </li>
-            <li className="flex items-center">
-              <span className="w-3 h-3 bg-blue-700 rounded-full mr-3"></span>
-              Tailored logistics solutions for any industry
-            </li>
-            <li className="flex items-center">
-              <span className="w-3 h-3 bg-blue-700 rounded-full mr-3"></span>
-              Customs Clearing and Documentation for smooth trade processes
-            </li>
-          </ul>
-          <a
-            href="#contact"
-            className="inline-block bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-800 transition-colors duration-300"
-          >
-            Contact Us
-          </a>
+        {/* Text Section */}
+        <div className="md:w-1/2 flex flex-col justify-between">
+          <div className="bg-white/80 backdrop-blur p-8 rounded-xl shadow-lg h-full flex flex-col justify-between">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-700">
+                About <span className="text-blue-900">Our Solutions</span>
+              </h2>
+              <p className="text-gray-700 text-lg mb-4">
+                <span className="font-semibold text-blue-700">
+                  Josephus International Link Ltd
+                </span>{" "}
+                is a dynamic Nigerian company specializing in{" "}
+                <span className="text-blue-700 font-medium">import</span>,{" "}
+                <span className="text-blue-700 font-medium">export</span>,{" "}
+                <span className="text-blue-700 font-medium">logistics</span>,
+                and{" "}
+                <span className="text-blue-700 font-medium">
+                  clearing & forwarding
+                </span>{" "}
+                services.
+              </p>
+              <p className="text-gray-700 text-lg mb-6">
+                We deliver seamless end-to-end supply chain solutions across
+                industries, handling cargo by land, sea, or air with precision
+                and care. As a trusted partner across West Africa, we’re
+                dedicated to building strong, lasting business connections.
+              </p>
+
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start gap-3">
+                  <FaShip className="text-blue-700 mt-1" size={20} />
+                  <span>Import and Export services for diverse industries</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <FaExchangeAlt className="text-blue-700 mt-1" size={20} />
+                  <span>
+                    Tailored logistics solutions designed for unique business
+                    needs
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <FaFileAlt className="text-blue-700 mt-1" size={20} />
+                  <span>
+                    Expert customs clearing and documentation for seamless trade
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <a
+              href="#contact"
+              className="inline-block bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-800 transition-colors duration-300 mt-auto"
+            >
+              Contact Us
+            </a>
+          </div>
         </div>
       </div>
     </section>
