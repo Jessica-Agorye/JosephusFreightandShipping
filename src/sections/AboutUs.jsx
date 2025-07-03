@@ -1,5 +1,7 @@
 import React from "react";
-import heroimage from "../assets/images/heroimage.jpg";
+import about1 from "../assets/images/about1.jpg";
+import about2 from "../assets/images/about2.jpg";
+import about3 from "../assets/images/about3.jpg";
 import { FaShip, FaExchangeAlt, FaFileAlt } from "react-icons/fa";
 
 function AboutUs() {
@@ -8,37 +10,31 @@ function AboutUs() {
       id="about"
       className="relative bg-gradient-to-r from-white via-blue-50 to-white py-24 text-gray-800 overflow-hidden"
     >
-      {/* Decorative blobs */}
       <div className="absolute -top-10 -left-10 w-72 h-72 bg-blue-100 opacity-40 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 -right-10 w-72 h-72 bg-blue-200 opacity-30 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-stretch gap-8">
-        {/* Image Section with 3 overlapping images */}
         <div className="md:w-1/2 relative min-h-[28rem] flex justify-center items-center">
-          {/* Image 1 */}
           <div className="w-52 h-72 rounded-xl overflow-hidden shadow-lg transform rotate-[-6deg] absolute top-0 left-8">
             <img
-              src={heroimage}
+              src={about1}
               alt="About Us 1"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-blue-600/40 to-transparent"></div>
           </div>
-
-          {/* Image 2 */}
+          =
           <div className="w-52 h-72 rounded-xl overflow-hidden shadow-xl transform rotate-[5deg] absolute top-10 right-8">
             <img
-              src={heroimage}
+              src={about2}
               alt="About Us 2"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-blue-600/40 to-transparent"></div>
           </div>
-
-          {/* Image 3 */}
           <div className="w-52 h-72 rounded-xl overflow-hidden shadow-lg transform rotate-[-3deg] absolute bottom-0 left-1/2 translate-x-[-50%]">
             <img
-              src={heroimage}
+              src={about3}
               alt="About Us 3"
               className="w-full h-full object-cover"
             />
@@ -46,7 +42,6 @@ function AboutUs() {
           </div>
         </div>
 
-        {/* Text Section */}
         <div className="md:w-1/2 flex flex-col justify-between">
           <div className="bg-white/80 backdrop-blur p-8 rounded-xl shadow-lg h-full flex flex-col justify-between">
             <div>
@@ -94,13 +89,6 @@ function AboutUs() {
                 </li>
               </ul>
             </div>
-
-            <a
-              href="#contact"
-              className="inline-block bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-800 transition-colors duration-300 mt-auto"
-            >
-              Contact Us
-            </a>
           </div>
         </div>
       </div>

@@ -13,7 +13,9 @@ function Footer() {
         <div className="flex flex-col md:flex-row justify-center items-start gap-12">
           {/* Brand */}
           <div className="flex-1 min-w-[200px]">
-            <h2 className="text-2xl font-bold mb-3">ShipSmart Logistics</h2>
+            <h2 className="text-2xl font-bold mb-3">
+              Josephus International Link
+            </h2>
             <p className="text-blue-100 max-w-xs">
               Reliable global freight & shipping solutions you can trust.
             </p>
